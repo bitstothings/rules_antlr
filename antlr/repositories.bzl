@@ -13,7 +13,7 @@ PACKAGES = {
         "4.10.1": {
             "url": "https://github.com/antlr/antlr4/archive/4.10.1.tar.gz",
             "prefix": "antlr4-4.10.1",
-            "sha256": "efe4057d75ab48145d4683100fec7f77d7f87fa2a8c07330cadd1f8e6f7eecae",
+            "sha256": "a320568b738e42735946bebc5d9d333170e14a251c5734e8b852ad1502efa8a2",
         },
         "4.9.3": {
             "url": "https://github.com/antlr/antlr4/archive/4.9.3.tar.gz",
