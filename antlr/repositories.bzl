@@ -249,7 +249,7 @@ def rules_antlr_optimized_dependencies(version):
 
 def _antlr4101_dependencies(languages):
     _antlr4_dependencies(
-        "4.10.1,
+        "4.10.1",
         languages,
         {
             "antlr4_runtime": "4.10.1",
