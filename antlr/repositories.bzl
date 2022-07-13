@@ -88,7 +88,7 @@ PACKAGES = {
     "antlr4_tool": {
         "4.10.1": {
             "path": "org/antlr/antlr4/4.10.1/antlr4-4.10.1.jar",
-            "sha256": "386fec520b8962fe37f448af383920ea3cd7a532314b36d7ba9ccec1ba95eb37",
+            "sha256": "6bef3dad65a1bd55533981d7ef694d27dcfb4e7a70f560dd026c8895b35a7468",
         },
         "4.9.3": {
             "path": "org/antlr/antlr4/4.9.3/antlr4-4.9.3.jar",
