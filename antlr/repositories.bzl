@@ -375,7 +375,8 @@ cc_library(
     hdrs = glob(["runtime/Cpp/runtime/src/**/*.h"]),
     includes = ["runtime/Cpp/runtime/src"],
     visibility = ["//visibility:public"],
-    defines = ["ANTLR4CPP_EXPORTS", "ANTLR4CPP_DLL"],
+    defines = ["ANTLR4CPP_EXPORTS"],
+    linkstatic = True
 )
 """
 
