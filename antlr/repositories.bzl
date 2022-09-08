@@ -375,8 +375,8 @@ cc_library(
     hdrs = glob(["runtime/Cpp/runtime/src/**/*.h"]),
     includes = ["runtime/Cpp/runtime/src"],
     visibility = ["//visibility:public"],
-    defines = ["ANTLR4CPP_EXPORTS"],
-    linkstatic = True
+    local_defines = ["ANTLR4CPP_EXPORTS"],
+    defines = ["ANTLR4CPP_DLL"],
 )
 """
 
@@ -484,6 +484,8 @@ cc_library(
     hdrs = glob(["runtime/Cpp/include/*.hpp", "runtime/Cpp/include/*.inl"]),
     includes = ["runtime/Cpp/include"],
     visibility = ["//visibility:public"],
+    local_defines = ["ANTLR4CPP_EXPORTS"],
+    defines = ["ANTLR4CPP_DLL"],
 )
 """
 
@@ -547,6 +549,8 @@ cc_library(
     hdrs = glob(["lib/cpp/antlr/*.hpp"]),
     includes = ["lib/cpp"],
     visibility = ["//visibility:public"],
+    local_defines = ["ANTLR4CPP_EXPORTS"],
+    defines = ["ANTLR4CPP_DLL"],
 )
 """
 
