@@ -10,6 +10,11 @@ v2 = [2, "2.7.7"]
 
 PACKAGES = {
     "antlr": {
+        "4dev": {
+          "url": "https://github.com/bitstothings/antlr4/archive/refs/heads/fix_rewriter_crashes.zip",
+            "prefix": "antlr4-fix_rewriter_crashes",
+            #"sha256": "a320568b738e42735946bebc5d9d333170e14a251c5734e8b852ad1502efa8a2",
+        },
         "4.10.1": {
             "url": "https://github.com/antlr/antlr4/archive/4.10.1.tar.gz",
             "prefix": "antlr4-4.10.1",
@@ -205,7 +210,7 @@ def rules_antlr_dependencies(*versionsAndLanguages):
             languages = [JAVA]
 
         for version in sorted(versions, key = _toString):
-            if version == 4 or version == "4.10.1":
+            if version == 4 or version == "4.10.1" or version == "4dev":
                 _antlr4101_dependencies(languages)
             elif version == "4.9.3":
                 _antlr493_dependencies(languages)
